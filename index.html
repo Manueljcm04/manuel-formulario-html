@@ -52,66 +52,69 @@
                     <label class="form-label" for="Lastname">Last name:</label>
                     <input class="form-control" type="text" id="Lastname" placeholder="Your last name">
                 </div>
-                <p>
-                <div class="col-4">
-                    City:
-                    <input name="name" type="text" value="">
+                <div class="col-md-6">
+                    <label class="form-label" for="Lastname">City:</label>
+                    <input class="form-control" type="text" id="City" placeholder="City">
                 </div>
-
-                </p>
-                <p>
-                <div>
-                    <div class="col-4">
-                        State:
-                        <select name="State" placeholder="Pick a state">
-                            <option selected>Seleccionar</option>
-                            <option value="Madrid">Madrid</option>
-                            <option value="Barcelona">Barcelona</option>
-                            <option value="Valencia">Valencia</option>
-                        </select>
-                    </div>
-                    </p>
-
-                    <div class="col-4">
-                        <p>
-                            Postal Code:
-                            <input name="name" type="text" value="">
-                        </p>
-                    </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="Lastname">State:</label>
+                    <input class="form-control" type="text" id="State" placeholder="State">
+                    <select name="State" placeholder="Pick a state">
+                        <option selected>Seleccionar</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Valencia">Valencia</option>
+                    </select>
                 </div>
-                <div class="col-6">
-                    <p>
-                        We accept:
-                        <input type="radio" name="color[]" value="green">
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <input type="radio" name="color[]" value="green">
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <input type="radio" name="color[]" value="green">
-                        <i class="fa-brands fa-cc-paypal"></i>
-                        <input type="radio" name="color[]" value="green">
-                        <i class="fa-brands fa-cc-apple-pay"></i>
-                    </p>
+                <div class="col-md-3">
+                    <label class="form-label" for="Lastname">Postal Code:</label>
+                    <input class="form-control" type="text" id="Postal Code" placeholder="Postal Code">
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="form-label" for="We accept"> We accept:</label>
+                    <div class="col-md-6 bg bg-secondary justify-content-between p-2 rounded">
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" name="flexRadioDifoult" checked>
+                            <label class="form-check-label fs-5" for="flexRadioDifoult">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" name="flexRadioDifoult">
+                            <label class="form-check-label fs-5" for="flexRadioDifoult">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" name="flexRadioDifoult">
+                            <label class="form-check-label fs-5" for="flexRadioDifoult">
+                                <i class="fa-brands fa-cc-paypal"></i>
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" name="flexRadioDifoult">
+                            <label class="form-check-label fs-5" for="flexRadioDifoult">
+                                <i class="fa-brands fa-cc-apple-pay"></i>
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 mb-5 mt-3">
+                    <label class="form-label" for="Massage">Massage:</label>
+                    <textarea name="comments" class="form-control" id="Massage" rows="3"></textarea>
+                    <div class="form-text">Add notes here</div>
                 </div>
         </div>
-        <div class="col-6">
-            <p>
-
-                Massage:
-                <textarea name="comments"></textarea>
-            </p>
+        <div class="col-12 border-top border-secondary p-3 d-md-flex justify-content-md-end bg-secondary-subtle">
+            <button type="button" class="mr-3 btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
         </div>
-
-
         </form>
 
 
-        <div class="row border-bottom border-secondary">
-            <div class="col-12 bg-secondary-subtle p-0">
 
-                <input type="button" value="Cancel">
-                <input type="button" value="Send">
-            </div>
-        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
