@@ -28,11 +28,11 @@
                 </div>
                 <div class="col-md-5">
                     <label class="form-label" for="Card"> Card #:</label>
-                    <input type="number" class="form-control" placeholder="XXXXXXX" id="Card">
+                    <input type="text" pattern="\d{16}" class="form-control" placeholder="XXXXXXX" id="Card">
                 </div>
                 <div class="col-md-3">
                     <label class="form-label" for="cvc"> CVC #:</label>
-                    <input type="number" class="form-control" placeholder="0000" id="cvc">
+                    <input type="text" class="form-control" pattern="\d{3}" placeholder="000" id="cvc">
                 </div>
                 <div class="col-md-4 mb-3">
                     <label class="form-label col-12" for="Amount">Amount:</label>
@@ -58,8 +58,8 @@
                 </div>
                 <div class="col-md-3">
                     <label class="form-label" for="Lastname">State:</label>
-                    <input class="form-control" type="text" id="State" placeholder="State">
-                    <select name="State" placeholder="Pick a state">
+                    
+                    <select class="form-select" name="State" placeholder="Pick a state">
                         <option selected>Seleccionar</option>
                         <option value="Madrid">Madrid</option>
                         <option value="Barcelona">Barcelona</option>
@@ -108,8 +108,8 @@
                 </div>
         </div>
         <div class="col-12 border-top border-secondary p-3 d-md-flex justify-content-md-end bg-secondary-subtle">
-            <button type="button" class="mr-3 btn btn-secondary">Cancel</button>
-            <button type="button" class="btn btn-primary">Send</button>
+            <button type="button" class="mx-3 btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Send</button>
         </div>
         </form>
 
